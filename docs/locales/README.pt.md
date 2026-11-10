@@ -6,6 +6,14 @@ Agrupa e-mails de exemplo por remetente e envia um relatório diário ao Telegra
 
 Python · Telegram Bot API
 
+## Demonstração
+
+Gera um relatório com e-mails de exemplo. O envio ao Telegram é interceptado localmente.
+
+[![Demonstração](../../docs/images/project-demo.gif)](../../docs/images/project-demo.mp4)
+
+[Baixar MP4](../../docs/images/project-demo.mp4?raw=true)
+
 ## Função
 
 - Leia a configuração local de `.env`.

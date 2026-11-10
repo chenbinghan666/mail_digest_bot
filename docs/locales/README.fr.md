@@ -6,6 +6,14 @@ Regroupe des e-mails d’exemple par expéditeur et envoie un rapport quotidien 
 
 Python · Telegram Bot API
 
+## Démonstration
+
+Génère un rapport à partir d’e-mails d’exemple. L’envoi vers Telegram est intercepté localement.
+
+[![Démonstration](../../docs/images/project-demo.gif)](../../docs/images/project-demo.mp4)
+
+[Télécharger le MP4](../../docs/images/project-demo.mp4?raw=true)
+
 ## Fonction
 
 - Lisez la configuration locale à partir de `.env`.

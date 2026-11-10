@@ -6,6 +6,14 @@
 
 Python · Telegram Bot API
 
+## 操作デモ
+
+サンプルメールでメインプログラムを実行し、日報を確認します。Telegram への送信はローカルで止めています。
+
+[![操作デモ](../../docs/images/project-demo.gif)](../../docs/images/project-demo.mp4)
+
+[MP4 をダウンロード](../../docs/images/project-demo.mp4?raw=true)
+
 ## 機能
 
 - `.env` からローカル構成を読み取ります。

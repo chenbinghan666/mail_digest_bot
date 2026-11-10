@@ -6,6 +6,14 @@ Gruppiert Beispiel-E-Mails nach Absender und sendet einen Tagesbericht an Telegr
 
 Python · Telegram Bot API
 
+## Demo
+
+Erstellt aus Beispiel-E-Mails einen Tagesbericht. Der Telegram-Versand wird lokal abgefangen.
+
+[![Demo](../../docs/images/project-demo.gif)](../../docs/images/project-demo.mp4)
+
+[MP4 herunterladen](../../docs/images/project-demo.mp4?raw=true)
+
 ## Funktion
 
 - Lokale Konfiguration von `.env` lesen.

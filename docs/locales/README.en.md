@@ -6,6 +6,14 @@ Groups sample emails by sender and sends a daily report to Telegram. This was my
 
 Python · Telegram Bot API
 
+## Demo
+
+Runs the main program with sample emails and previews the digest with Telegram delivery intercepted locally.
+
+[![Demo](../../docs/images/project-demo.gif)](../../docs/images/project-demo.mp4)
+
+[Download MP4](../../docs/images/project-demo.mp4?raw=true)
+
 ## Features
 
 - Read local configuration from `.env`.

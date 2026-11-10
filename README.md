@@ -6,6 +6,14 @@
 
 Python · Telegram Bot API
 
+## 实操演示
+
+用示例邮件运行主程序，查看生成的日报。发送步骤在本地拦截。
+
+[![实操演示](docs/images/project-demo.gif)](docs/images/project-demo.mp4)
+
+[下载 MP4](docs/images/project-demo.mp4?raw=true)
+
 ## 功能
 
 - 从 `.env` 读取本地配置。
