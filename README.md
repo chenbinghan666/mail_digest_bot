@@ -1,58 +1,33 @@
 # Daily Mail Report Bot
 
-A beginner-friendly Python automation project that builds a daily email report
-from sample email data and sends it to Telegram.
+**简体中文** · [English](https://github.com/chenbinghan666/mail_digest_bot/blob/main/docs/locales/README.en.md) · [日本語](https://github.com/chenbinghan666/mail_digest_bot/blob/main/docs/locales/README.ja.md) · [Deutsch](https://github.com/chenbinghan666/mail_digest_bot/blob/main/docs/locales/README.de.md) · [Français](https://github.com/chenbinghan666/mail_digest_bot/blob/main/docs/locales/README.fr.md) · [Español](https://github.com/chenbinghan666/mail_digest_bot/blob/main/docs/locales/README.es.md) · [Português](https://github.com/chenbinghan666/mail_digest_bot/blob/main/docs/locales/README.pt.md)
 
-This is my first Python project prepared for GitHub. The current version uses
-sample email data so the project can run without Outlook API setup.
+把示例邮件按发件人汇总，再通过 Telegram 发送每日报告。这是我的第一个公开 Python 练习项目，适合从报告生成与消息发送两个模块读起。
 
-## Features
+Python · Telegram Bot API
 
-- Reads private settings from a `.env` file
-- Builds a daily email report from sample email data
-- Counts total emails
-- Counts emails by sender
-- Sends the report to Telegram
+## 功能
 
-## Project Structure
+- 从 `.env` 读取本地配置。
+- 统计示例邮件总数和各发件人的邮件数。
+- 将报告发送到指定的 Telegram 聊天。
 
-```text
-mail_digest_bot/
-  main.py
-  config.py
-  telegram_client.py
-  report_builder.py
-  requirements.txt
-  .env.example
-  .gitignore
-  README.md
-```
+## 安装与运行
 
-## Setup
+1. 运行 `python -m pip install -r requirements.txt` 安装依赖。
+2. 将 `.env.example` 复制为 `.env`，填写以下配置。
 
-Install the required Python packages:
+   ```dotenv
+   BOT_NAME=daily_mail_report_bot
+   TELEGRAM_BOT_TOKEN=your_telegram_bot_token
+   TELEGRAM_CHAT_ID=your_telegram_chat_id
+   ```
 
-```bash
-pip install -r requirements.txt
-```
+3. 运行 `python main.py` 生成并发送报告。
 
-Create a `.env` file in the project folder:
+请把包含 Bot Token 的 `.env` 留在本机。
 
-```text
-BOT_NAME=daily_mail_report_bot
-TELEGRAM_BOT_TOKEN=your_telegram_bot_token
-TELEGRAM_CHAT_ID=your_telegram_chat_id
-```
-
-Do not upload your `.env` file to GitHub because it contains private keys.
-
-## Run
-
-```bash
-python main.py
-```
-
-## Example Report
+## 报告示例
 
 ```text
 Yesterday Mail Report
@@ -64,8 +39,11 @@ boss@example.com - 2 emails
 client@example.com - 1 emails
 ```
 
-## Future Improvements
+## 代码入口
 
-- Fetch real Outlook emails using Microsoft Graph
-- Send the report automatically every day
-- Add AI-based email importance detection
+- `main.py` 串起整个流程。
+- `config.py` 加载配置。
+- `report_builder.py` 生成报告。
+- `telegram_client.py` 发送报告。
+
+当前版本使用示例数据。后续探索方向包括 Microsoft Graph 邮件读取、定时发送和邮件重要性判断。
